@@ -1,0 +1,14 @@
+{
+    "name": "Prototypes",
+    "rootNamespace": "DesignPatterns.Creationals.Prototypes",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

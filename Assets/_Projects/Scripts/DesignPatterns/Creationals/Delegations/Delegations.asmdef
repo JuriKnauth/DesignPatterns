@@ -1,0 +1,14 @@
+{
+    "name": "Delegations",
+    "rootNamespace": "DesignPatterns.Creationals.Delegations",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
