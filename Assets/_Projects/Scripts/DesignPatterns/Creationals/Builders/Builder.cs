@@ -4,7 +4,7 @@ namespace DesignPatterns.Creationals.Builders
 {
     public static class A
     {
-        public static Builder Buildable => new Builder();
+        public static Builder Buildable => new();
     }
 
     public class Builder
@@ -30,7 +30,7 @@ namespace DesignPatterns.Creationals.Builders
 
     public class Buildable
     {
-        private object[] _parameters;
+        private readonly object[] _parameters;
 
         public Buildable(params object[] parameters)
         {
@@ -42,7 +42,7 @@ namespace DesignPatterns.Creationals.Builders
     {
         public Test()
         {
-            Buildable buildable = A.Buildable.With(new Object());
+            _ = A.Buildable.With(new Object());
         }
     }
 }

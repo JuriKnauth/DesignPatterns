@@ -12,6 +12,6 @@ namespace DesignPatterns.Creationals.AbstractFactories
             _instance = this;
         }
 
-        public static ProductEnum ProductEnum { get => _instance._productEnum; }
+        public static ProductEnum ProductEnum => _instance._productEnum;
     }
 }

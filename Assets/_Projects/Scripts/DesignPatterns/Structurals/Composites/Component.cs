@@ -1,4 +1,3 @@
-using PlasticPipe.PlasticProtocol.Messages;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -7,7 +6,7 @@ namespace DesignPatterns.Structurals.Composites
 {
     public abstract class Component : MonoBehaviour
     {
-        private GUID _guid = new GUID();
+        private GUID _guid = new();
 
         public int Value { get; set; }
 

@@ -1,5 +1,3 @@
-using System.Runtime.InteropServices.WindowsRuntime;
-
 namespace DesignPatterns.Creationals.Prototypes
 {
     public interface IPrototype

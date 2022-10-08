@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace DesignPatterns.Creationals.AbstractFactories
 {
@@ -21,8 +20,8 @@ namespace DesignPatterns.Creationals.AbstractFactories
 
         private static void CreateProducts(ConcreteFactoryProductAOrB concreteFactoryProductAOrB)
         {
-            var productOne = concreteFactoryProductAOrB.AbstractFactory.InstantiateProductOne();
-            var productTwo = concreteFactoryProductAOrB.AbstractFactory.InstantiateProductTwo();
+            IProductOne productOne = concreteFactoryProductAOrB.AbstractFactory.InstantiateProductOne();
+            IProductTwo productTwo = concreteFactoryProductAOrB.AbstractFactory.InstantiateProductTwo();
 
             Debug.Log($"{productOne} {productOne.GetType()})");
             Debug.Log($"{productTwo} {productTwo.GetType()})");

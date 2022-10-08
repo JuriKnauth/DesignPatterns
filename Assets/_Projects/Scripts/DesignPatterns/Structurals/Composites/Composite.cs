@@ -13,12 +13,12 @@ namespace DesignPatterns.Structurals.Composites
 
         public override void Remove(Component component)
         {
-            Children.Remove(component);
+            _ = Children.Remove(component);
         }
 
-        public virtual List<Component> GetChildren()
+        public override List<Component> GetChildren()
         {
-            List<Component> children = new List<Component>(Children.Count + 1) { this };
+            List<Component> children = new(Children.Count + 1) { this };
             children.AddRange(Children);
             return children;
         }

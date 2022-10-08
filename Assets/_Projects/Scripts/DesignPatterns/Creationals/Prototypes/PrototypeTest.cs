@@ -6,7 +6,7 @@ namespace DesignPatterns.Creationals.Prototypes
     {
         private void Start()
         {
-            Prototype prototype = new Prototype(new string[] { "Red" });
+            Prototype prototype = new(new string[] { "Red" });
 
             IPrototype iPrototypeCopy = prototype.Clone(prototype);
 
@@ -16,7 +16,6 @@ namespace DesignPatterns.Creationals.Prototypes
                 {
                     Debug.Log(prototypeCopy.Settings[i]);
                 }
-
             }
         }
     }

@@ -6,21 +6,13 @@
 
         public void Setup()
         {
-            switch (AbstractFactorySettings.ProductEnum)
+            AbstractFactory = AbstractFactorySettings.ProductEnum switch
             {
-                case ProductEnum._unassigned:
-                    AbstractFactory = new FactoryA();
-                    break;
-                case ProductEnum.A:
-                    AbstractFactory = new FactoryA();
-                    break;
-                case ProductEnum.B:
-                    AbstractFactory = new FactoryB();
-                    break;
-                default:
-                    AbstractFactory = new FactoryA();
-                    break;
-            }
+                ProductEnum._unassigned => new FactoryA(),
+                ProductEnum.A => new FactoryA(),
+                ProductEnum.B => new FactoryB(),
+                _ => new FactoryA(),
+            };
         }
     }
 }

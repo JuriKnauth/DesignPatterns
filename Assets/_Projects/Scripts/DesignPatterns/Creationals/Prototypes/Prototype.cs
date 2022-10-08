@@ -15,15 +15,12 @@ namespace DesignPatterns.Creationals.Prototypes
 
         public IPrototype Clone(IPrototype prototype)
         {
-            if (prototype is Prototype toCopyPrototype)
-            {
-                return new Prototype()
+            return prototype is Prototype toCopyPrototype
+                ? new Prototype()
                 {
                     _settings = toCopyPrototype._settings
-                };
-            }
-
-            return new Prototype();
+                }
+                : (IPrototype)new Prototype();
         }
     }
 }
