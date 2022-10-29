@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.Structurals.Decorators
 {
-    public class NameDisplayer : MonoBehaviour, INameDisplayer
+    public class NameDisplayer : INameDisplayer
     {
         protected string Name = "Bob";
 

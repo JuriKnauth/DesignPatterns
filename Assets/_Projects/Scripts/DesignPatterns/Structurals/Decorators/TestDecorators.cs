@@ -8,20 +8,20 @@ namespace DesignPatterns.Structurals.Decorators
         {
             INameDisplayer[] nameDisplayers = new INameDisplayer[]
             {
-                new PrefixNameDisplayerDecorator()
-                {
-                    NameDisplayer = new AllUpperCaseNameDisplayerDecorator()
-                    {
-                        NameDisplayer = new NameDisplayer()
-                    }
-                },
-                new PrefixNameDisplayerDecorator()
-                {
-                    NameDisplayer = new AllLowerCaseNameDisplayerDecorator()
-                    {
-                        NameDisplayer = new NameDisplayer()
-                    }
-                },
+                new PrefixNameDisplayerDecorator
+                (
+                    new AllUpperCaseNameDisplayerDecorator
+                    (
+                        new NameDisplayer()
+                    )
+                ),
+                new PrefixNameDisplayerDecorator
+                (
+                    new AllLowerCaseNameDisplayerDecorator
+                    (
+                        new NameDisplayer()
+                    )
+                ),
                 new NameDisplayer()
             };
 
