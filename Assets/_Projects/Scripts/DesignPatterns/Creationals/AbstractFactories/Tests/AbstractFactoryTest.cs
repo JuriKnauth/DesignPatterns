@@ -8,8 +8,7 @@ namespace DesignPatterns.Creationals.AbstractFactories
 
         private void Start()
         {
-            SetConcreteFactory();
-            CreateProducts(_concreteFactoryProductAOrB);
+            CreateProductsInEditor();
         }
 
         private void SetConcreteFactory()
