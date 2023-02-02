@@ -65,11 +65,6 @@ namespace DesignPatterns.Creationals.Singeltons.Managers
             }
         }
 
-        public virtual void AddUpdateTask(int index, Action action)
-        {
-            AddUpdateTask(index, action);
-        }
-
         public virtual void AddUpdateTask(UpdateTask updateTask)
         {
             _newTasks.Add(updateTask);

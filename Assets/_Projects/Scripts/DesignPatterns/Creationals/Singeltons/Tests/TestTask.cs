@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DesignPatterns.Creationals.Singeltons.Tests
 {
-    public class Test1 : MonoBehaviour
+    public class TestTask : MonoBehaviour
     {
         [SerializeField] private int _index;
         [SerializeField] private float time;
