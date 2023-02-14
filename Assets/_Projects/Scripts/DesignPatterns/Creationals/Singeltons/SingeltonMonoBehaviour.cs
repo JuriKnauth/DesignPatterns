@@ -26,10 +26,8 @@ namespace DesignPatterns.Creationals.Singeltons
                 }
 
                 GameObject gO = new();
-                T singeltonMonoBehaviour = gO.AddComponent<T>();
+                _instance = gO.AddComponent<T>();
                 DontDestroyOnLoad(gO);
-
-                _instance = singeltonMonoBehaviour;
 
 #if UNITY_EDITOR
                 gO.name = _instance.GetType().Name;
